@@ -1,0 +1,105 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(2, 177, 183);
+    color:#001365;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container{
+    padding: 20px;
+}
+
+.card {
+    background: linear-gradient(135deg, #000 80%, #022e3a 100%);
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    text-align: center;
+    max-width: 340px;
+    width: 100%;
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: translateY(-6px) scale(1.03);
+}
+
+.profile-img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #00e0ff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+
+.name{
+    color: #00e0ff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.location { 
+    color: #b2f0ff;
+    font-size: 1rem;
+    margin: 5px 0 15px;
+}
+
+.description {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    color: #e0f7fa;
+}
+
+.links {
+    display: block;
+    background: linear-gradient(90deg, #001365 60%, #00e0ff 100%);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+.links:hover, .links:focus {
+    background: linear-gradient(90deg, #00e0ff 60%, #001365 100%);
+    color: #001365;
+    transform: scale(1.04);
+    outline: none;
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 18px;
+        max-width: 98vw;
+    }
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+    .name {
+        font-size: 1.1rem;
+    }
+    .description {
+        font-size: 0.8rem;
+    }
+    .links {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+}
